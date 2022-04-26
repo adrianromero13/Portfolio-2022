@@ -6,11 +6,10 @@ import CustomHeader from "../Header";
 
 const Layout = ({ children }) => {
   return (
-    <Container fluid>
-      {/* components */}
+    <>
       <CustomHeader />
-      
-    </Container>
+      <Container fluid>{/* components */}</Container>
+    </>
   );
 };
 
