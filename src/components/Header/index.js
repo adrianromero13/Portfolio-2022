@@ -12,30 +12,23 @@ import {
 
 const CustomHeader = () => (
 
-    <Segment placeholder>
-Hello
-    {/* <Grid columns={2} stackable textAlign='center'>
-      <Divider vertical>Or</Divider>
+<>
+<Segment horizontal>
+
+    <Grid columns={2} textAlign='center'>
       <Grid.Row verticalAlign='middle'>
         <Grid.Column>
-          <Header icon>
-            <Icon name='search' />
-            Find Country
-          </Header>
-
-          <Search placeholder='Search countries...' />
+          Logo
         </Grid.Column>
 
         <Grid.Column>
-          <Header icon>
-            <Icon name='world' />
-            Add New Country
-          </Header>
-          <Button primary>Create</Button>
+          <Button circular>Portfolio</Button>
         </Grid.Column>
       </Grid.Row>
-    </Grid> */}
-  </Segment>
+    </Grid>
+</Segment>
+  
+  </>
   );
 
 export default CustomHeader;
