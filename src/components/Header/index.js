@@ -1,34 +1,31 @@
-import React from "react";
-import {
-  Segment,
-  Grid,
-  Divider,
-  Header,
-  Icon,
-  Search,
-  Button,
-} from "semantic-ui-react";
+import React, { useState } from "react";
+import { Segment, Grid, Menu, Button } from "semantic-ui-react";
 // components needed
 
-const CustomHeader = () => (
+const CustomHeader = () => {
+  const [aciveItem, setAciveItem] = useState("home");
+  return (
+    <>
+      <Segment vertical>
+        <Grid columns={2} textAlign="center">
+          <Grid.Row verticalAlign="middle">
+            <Grid.Column>logo</Grid.Column>
 
-<>
-<Segment horizontal>
-
-    <Grid columns={2} textAlign='center'>
-      <Grid.Row verticalAlign='middle'>
-        <Grid.Column>
-          Logo
-        </Grid.Column>
-
-        <Grid.Column>
-          <Button circular>Portfolio</Button>
-        </Grid.Column>
-      </Grid.Row>
-    </Grid>
-</Segment>
-  
-  </>
+            <Grid.Column verticalAlign='middle'>
+              <Menu secondary>
+                <Menu.Item
+                  name="Home"
+                  // active={this.activeItem}
+                  // onClick={this.handleItemClick}
+                />
+              <Button circular>Portfolio</Button>
+              </Menu>
+            </Grid.Column>
+          </Grid.Row>
+        </Grid>
+      </Segment>
+    </>
   );
+};
 
 export default CustomHeader;
