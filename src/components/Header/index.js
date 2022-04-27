@@ -5,14 +5,20 @@ import React, { useState } from "react";
 const CustomHeader = () => {
   const [aciveItem, setAciveItem] = useState("home");
   return (
-    <div className='navbar well'>
-      <div className='container'>
-        <a className='navbar-brand logo-link' href="#">
-          <img src='' alt='' width='30' height='24' className='d-inline-block align-text-top'/>
-        Halo
-        </a>
-      </div>
-    </div>
+    <nav className="navbar navbar-light bg-light justify-content-between">
+      <a className="navbar-brand">Logo</a>
+      <form className="form-inline">
+        <input
+          className="form-control mr-sm-2"
+          type="search"
+          placeholder="Search"
+          aria-label="Search"
+        />
+        <button className="btn btn-outline-success my-2 my-sm-0" type="submit">
+          Search
+        </button>
+      </form>
+    </nav>
   );
 };
 

@@ -7,7 +7,7 @@ body {
 
 .well {
   background-color: #0a0909;
-  color: #84b2bc;
+  color: #84b2bc !important;
 }
 
 .logo-link:link {
@@ -19,6 +19,10 @@ body {
 .logo-link:hover {
   color: #6ee4ff;
 }
+
+/* .custom-toggler {
+  background-color: black;
+} */
 
 
 #root {
