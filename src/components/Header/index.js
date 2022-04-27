@@ -1,12 +1,13 @@
 import React, { useState } from "react";
-import { Segment, Grid, Menu, Button, Icon } from "semantic-ui-react";
+// import { Segment, Grid, Menu, Button, Icon } from "semantic-ui-react";
 // components needed
 
 const CustomHeader = () => {
   const [aciveItem, setAciveItem] = useState("home");
   return (
     <>
-      <Segment vertical>
+    new one
+      {/* <Segment vertical>
         <Grid >
           <Grid.Row columns={2} verticalAlign='middle'>
             <Grid.Column >
@@ -31,7 +32,7 @@ const CustomHeader = () => {
             </Grid.Column>
           </Grid.Row>
         </Grid>
-      </Segment>
+      </Segment> */}
     </>
   );
 };
