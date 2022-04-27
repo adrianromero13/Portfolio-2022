@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Segment, Grid, Menu, Button } from "semantic-ui-react";
+import { Segment, Grid, Menu, Button, Icon } from "semantic-ui-react";
 // components needed
 
 const CustomHeader = () => {
@@ -7,16 +7,24 @@ const CustomHeader = () => {
   return (
     <>
       <Segment vertical>
-        <Grid columns={2} textAlign="center">
-          <Grid.Row verticalAlign="middle">
-            <Grid.Column>logo</Grid.Column>
+        <Grid >
+          <Grid.Row columns={2} verticalAlign='middle'>
+            <Grid.Column >
+              <Icon name='adn' size='huge'/>
+              </Grid.Column>
 
-            <Grid.Column verticalAlign='middle'>
-              <Menu secondary>
+            <Grid.Column>
+              <Menu secondary floated='right'>
                 <Menu.Item
                   name="Home"
                   // active={this.activeItem}
                   // onClick={this.handleItemClick}
+                />
+                <Menu.Item
+                name='About'
+                />
+                <Menu.Item
+                name='Contact'
                 />
               <Button circular>Portfolio</Button>
               </Menu>
