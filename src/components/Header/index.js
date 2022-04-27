@@ -5,35 +5,14 @@ import React, { useState } from "react";
 const CustomHeader = () => {
   const [aciveItem, setAciveItem] = useState("home");
   return (
-    <>
-    new one
-      {/* <Segment vertical>
-        <Grid >
-          <Grid.Row columns={2} verticalAlign='middle'>
-            <Grid.Column >
-              <Icon name='adn' size='huge'/>
-              </Grid.Column>
-
-            <Grid.Column>
-              <Menu secondary floated='right'>
-                <Menu.Item
-                  name="Home"
-                  // active={this.activeItem}
-                  // onClick={this.handleItemClick}
-                />
-                <Menu.Item
-                name='About'
-                />
-                <Menu.Item
-                name='Contact'
-                />
-              <Button circular>Portfolio</Button>
-              </Menu>
-            </Grid.Column>
-          </Grid.Row>
-        </Grid>
-      </Segment> */}
-    </>
+    <div className='navbar well'>
+      <div className='container'>
+        <a className='navbar-brand logo-link' href="#">
+          <img src='' alt='' width='30' height='24' className='d-inline-block align-text-top'/>
+        Halo
+        </a>
+      </div>
+    </div>
   );
 };
 

@@ -1,0 +1,29 @@
+html,
+body {
+  height: 100%;
+}
+
+/* styles for page*/
+
+.well {
+  background-color: #0a0909;
+  color: #84b2bc;
+}
+
+.logo-link:link {
+  color: #84b2bc;
+}
+.logo-link:visited {
+  color: #84b2bc;
+}
+.logo-link:hover {
+  color: #6ee4ff;
+}
+
+
+#root {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
