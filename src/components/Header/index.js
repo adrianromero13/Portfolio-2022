@@ -3,37 +3,43 @@ import React, { useState } from "react";
 // components needed
 
 const CustomHeader = () => {
-  const [aciveItem, setAciveItem] = useState("home");
-  return (
-    <>
-    new one
-      {/* <Segment vertical>
-        <Grid >
-          <Grid.Row columns={2} verticalAlign='middle'>
-            <Grid.Column >
-              <Icon name='adn' size='huge'/>
-              </Grid.Column>
 
-            <Grid.Column>
-              <Menu secondary floated='right'>
-                <Menu.Item
-                  name="Home"
-                  // active={this.activeItem}
-                  // onClick={this.handleItemClick}
-                />
-                <Menu.Item
-                name='About'
-                />
-                <Menu.Item
-                name='Contact'
-                />
-              <Button circular>Portfolio</Button>
-              </Menu>
-            </Grid.Column>
-          </Grid.Row>
-        </Grid>
-      </Segment> */}
-    </>
+  return (
+    <nav className="navbar navbar-expand-lg navbar-light bg-light justify-content-between">
+      <a className="navbar-brand">Logo</a>
+      <div className="inline ">
+        
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNavDropdown">
+    <ul class="navbar-nav">
+      <li class="nav-item active">
+        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Features</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Pricing</a>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Dropdown link
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+          <a class="dropdown-item" href="#">Action</a>
+          <a class="dropdown-item" href="#">Another action</a>
+          <a class="dropdown-item" href="#">Something else here</a>
+        </div>
+      </li>
+        <button className="btn btn-outline-success my-2 my-sm-0" type="submit">
+          Portfolio
+        </button>
+    </ul>
+  </div>
+      </div>
+    </nav>
   );
 };
 

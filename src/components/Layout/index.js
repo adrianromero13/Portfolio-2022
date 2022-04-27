@@ -1,16 +1,16 @@
 import React from "react";
-// import { Container } from "semantic-ui-react";
-// import 'semantic-ui-css';
 
 import CustomHeader from "../Header";
 
+import '../../assets/Styles/styles.css';
+
+
 const Layout = ({ children }) => {
   return (
-    <Container fluid>
+      <div>
+        <CustomHeader />
 
-      <CustomHeader />
-      {/* <Container fluid></Container> */}
-    </Container>
+      </div>
   );
 };
 
