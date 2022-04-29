@@ -10,6 +10,27 @@ body {
   color: #84b2bc !important;
 }
 
+.myHeader {
+  background-color: #1a1a1a;
+  color: #84b2bc !important;
+  /* height: 10vh; */
+  min-height: 10vh;
+}
+
+.mainContainer {
+  background-color:#0a0909;
+  color: #e6e6e6;
+  height: 100vh;
+  padding: 5%;
+}
+
+.myName {
+  color: #cc9000;
+}
+.myTitle {
+  color: rgba(186, 87, 219, .80);
+}
+
 .logo-link:link {
   color: #84b2bc;
 }
